@@ -139,6 +139,16 @@ if (Test-Path -Path $folderPath -PathType Container) {
                 "object_pr_Skel_004188" { @newName = "gSkullFishSkel" }
                 "object_pr_Anim_004274" { @newName = "gSkullFishAttackAnim" }
                 "object_pr_Anim_004340" { @newName = "gSkullFishSwimAnim" }
+                "object_iknv_obj_DL_00DB60" { @newName = "gIkanaCaveFogDL" }
+                "object_iknv_obj_DL_00DDD8" { @newName = "gIkanaCaveCursedDL" }
+                "object_iknv_obj_Matanimheader_00F1C0" { @newName = "gIkanaCaveInteriorTexAnim" }
+                "object_iknv_obj_DL_010D98" { @newName = "gIkanaCavePurifiedDL" }
+                "object_iknv_obj_DL_0115E0" { @newName = "gIkanaCaveSpringWaterDL" }
+                "object_iknv_obj_Matanimheader_0117A0" { @newName = "gIkanaCaveSpringWaterTexAnim" }
+                "object_iknv_obj_Colheader_0117C8" { @newName = "gIkanaCaveSpringWaterCol" }
+                "object_iknv_obj_DL_012700" { @newName = "gIkanaStreamDL" }
+                "object_iknv_obj_Matanimheader_012728" { @newName = "gIkanaStreamTexAnim" }
+                "object_iknv_obj_Colheader_012788" { @newName = "gIkanaStreamCol" }
 
 				Default { $newName = $nameWithoutExtension }
             }
