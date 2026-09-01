@@ -1,10 +1,10 @@
 ################################################################### 
 ###          2 Ship 2 Harkinian - Texture Pack Updater          ### 
 ###               Authors: Purple Hato, Archez, and Eblo        ###
-### Description: Update texture pack to 2S2H 4.1.0 standard     ###
+### Description: Update texture pack to 2S2H 5.1.0 standard     ###
 ###################################################################
 
-# This tool is for those who work on Texture Packs and need to update them from 2S2H 4.0.0 onwards.
+# This tool is for those who work on Texture Packs and need to update them from 2S2H 5.1.0 onwards.
 # In those new versions, texture names and folder will be standardized to use the updated decomp names. 
 
 # 1. Ensure that you can run PowerShell scripts on your computer
@@ -16,7 +16,7 @@
 Write-Host "###################################################################`r 
 ###          2 Ship 2 Harkinian - Texture Pack Updater          ###`r
 ###               Authors: Purple Hato, Archez, and Eblo        ###`r
-### Description: Update texture pack to 2S2H 4.1.0 standard     ###`r
+### Description: Update texture pack to 2S2H 5.1.0 standard     ###`r
 ###################################################################" -ForegroundColor DarkCyan
 
 Write-Host "WARNING: THIS TOOL WILL MAKE CHANGES TO THE FILES AND FOLDERS IN YOUR TEXTURE PACK.`nPLEASE MAKE A BACKUP BEFORE USING THIS SCRIPT." -ForegroundColor Red
@@ -149,6 +149,17 @@ if (Test-Path -Path $folderPath -PathType Container) {
                 "object_iknv_obj_DL_012700" { @newName = "gIkanaStreamDL" }
                 "object_iknv_obj_Matanimheader_012728" { @newName = "gIkanaStreamTexAnim" }
                 "object_iknv_obj_Colheader_012788" { @newName = "gIkanaStreamCol" }
+                "gameplay_keep_Tex_00C830" { @newName = "gHilite1Tex" }
+                "gameplay_keep_Tex_00CA30" { @newName = "gHilite2Tex" }
+                "gameplay_keep_Tex_00CA30_Overflow" { @newName = "gHilite2Tex_Overflow" }
+                "gameplay_keep_Tex_02CB30" { @newName = "gUnknownCircle4Tex" }
+                "gameplay_keep_Tex_035FB0" { @newName = "gEffFleckTex" }
+                "object_bji_Tex_004130" { @newName = "object_bji_TLUT_004130" }
+                "object_boj_Blob_009848" { @newName = "object_boj_TLUT_009848" }
+                "object_in2_Tex_004C28" { @newName = "object_in2_TLUT_004C28" }
+                "object_rz_Tex_00B650" { @newName = "object_rz_TLUT_00B650" }
+                "D_801AEF88" { @newName = "gActorSetupXluDL" }
+                "D_801AEFA0" { @newName = "gActorSetupOpaDL" }
 
 				Default { $newName = $nameWithoutExtension }
             }
